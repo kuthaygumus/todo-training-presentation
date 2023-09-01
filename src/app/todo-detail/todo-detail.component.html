@@ -1,0 +1,14 @@
+<div class="card my-3" *ngIf="todo">
+  <div class="card-body">
+    <span class="badge bg-warning">
+      id: {{todo.id}} - name: {{todo.description}}
+    </span>
+
+    <div class="form-group">
+      <label for="description"></label>
+      <input type="text" [(ngModel)]="todo.description" class="form-control" id="description" placeholder="Enter description">
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="updateTodo()">Update</button>
+  </div>
+</div>

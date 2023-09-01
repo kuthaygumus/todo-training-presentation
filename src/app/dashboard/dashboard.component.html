@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <h3 class="bg-primary text-white p3">To Do List of {{ userName }}</h3>
+
+    <todo-add (addTodo)="addTask($event)"></todo-add>
+
+    <!-- for change detection -->
+    <!-- <div><input type="text" (keyup)="changeText()" /></div> -->
+
+    <todo-filter
+      [displayAll]="displayAll"
+      (displayAllChange)="onDisplayAllChange($event)">
+    </todo-filter>
+
+    <todo-list [todos]="taskList" (removeTodo)="removeTask($event)"></todo-list>
+  </div>
+
+  <!-- view child example -->
+  <!-- <button (click)="callChildFunctionFromParent()" #parentButton> Get Result from Child Method </button>
+  <div> {{childNumber}}</div> -->
+</div>

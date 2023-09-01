@@ -1,23 +1,23 @@
-export class Model {
-  user;
-  items;
+export class TodoItem {
+  id: number;
+  description: string;
+  action: boolean;
 
-  constructor() {
-    this.user = 'Kamil';
-    this.items = [
-      new TodoItem('Buy Flowers', true),
-      new TodoItem('Get Shoes', false),
-      new TodoItem('Collect Tickets', false),
-      new TodoItem('Call Joe', false)
-    ];
+  constructor(id: number, description: string, action: boolean) {
+    this.id = id;
+    this.description = description;
+    this.action = action;
   }
 }
 
-export class TodoItem {
-  description: string;
+export class Movie {
+  id: number;
+  name: string;
   action: boolean;
-  constructor(description: string, action: boolean) {
-    this.description = description;
+
+  constructor(id: number, name: string, action: boolean) {
+    this.id = id;
+    this.name = name;
     this.action = action;
   }
 }

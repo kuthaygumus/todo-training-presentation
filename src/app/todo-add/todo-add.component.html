@@ -1,0 +1,18 @@
+<div class="input-group my-3 mx-0">
+  <input
+    #todoText
+    type="text"
+    class="form-control"
+    placeholder="Add To Do Here"
+    aria-describedby="basic-addon2"/>
+  <div class="input-group-append">
+    <button
+      class="btn btn-primary"
+      (click)="addTodo.emit(todoText.value)"
+      type="button">
+      Add
+    </button>
+    <!-- for change detection -->
+    <!-- <div> CheckRender: {{checkRender()}} </div> -->
+  </div>
+</div>

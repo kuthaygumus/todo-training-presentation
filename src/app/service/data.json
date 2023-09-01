@@ -1,0 +1,61 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "Prepare Coffee",
+      "action": true
+    },
+    {
+      "id": 2,
+      "description": "Have a Quick Breakfast",
+      "action": false
+    },
+    {
+      "id": 3,
+      "description": "Clean Desk",
+      "action": false
+    },
+    {
+      "id": 4,
+      "description": "Check Emails",
+      "action": false
+    },
+    {
+      "id": 5,
+      "description": "Join Daily Meeting",
+      "action": false
+    },
+    {
+      "id": 6,
+      "description": "Listen Music",
+      "action": false
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Lord of The Rings",
+      "action": false
+    },
+    {
+      "id": 2,
+      "name": "Star Wars",
+      "action": false
+    },
+    {
+      "id": 3,
+      "name": "How I Met Your Mother",
+      "action": false
+    },
+    {
+      "id": 4,
+      "name": "Friends",
+      "action": false
+    },
+    {
+      "id": 5,
+      "name": "The Office",
+      "action": false
+    }
+  ]
+}
